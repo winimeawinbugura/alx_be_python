@@ -1,0 +1,11 @@
+# future_age_calculator.py
+# This script calculates how old the user will be in 2050
+
+# Ask for the user's current age
+current_age = int(input("How old are you? "))
+
+# Calculate how old they will be in 2050
+future_age = current_age + 27  # (2050 - 2023 = 27)
+
+# Display the result
+print(f"In 2050, you will be {future_age} years old.")
