@@ -1,5 +1,4 @@
-# daily_reminder.py
-# A simple daily reminder program using match-case, if statements, and loops.
+#!/usr/bin/env python3
 
 # Prompt user for task details
 task = input("Enter your task: ")
@@ -17,11 +16,8 @@ match priority:
     case _:
         reminder = f"'{task}' has an unknown priority level"
 
-# Adjust reminder based on time sensitivity
+# Provide customized reminder
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
+    print(f"Reminder: {reminder} that requires immediate attention today!")
 else:
-    reminder = f"Note: {reminder}. Consider completing it when you have free time."
-
-# Display the final reminder
-print(f"\nReminder: {reminder}")
+    print(f"Note: {reminder}. Consider completing it when you have free time.")
