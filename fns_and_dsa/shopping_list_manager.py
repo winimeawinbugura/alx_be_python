@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def display_menu():
-    print("\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
@@ -21,7 +21,7 @@ def main():
                 print(f"'{item}' has been added to the list.")
             else:
                 print("Invalid item name.")
-        
+
         elif choice == '2':
             item = input("Enter item to remove: ").strip()
             if item in shopping_list:
@@ -29,19 +29,19 @@ def main():
                 print(f"'{item}' has been removed from the list.")
             else:
                 print(f"Item '{item}' not found in the list.")
-        
+
         elif choice == '3':
             if shopping_list:
-                print("\nCurrent Shopping List:")
+                print("Current Shopping List:")
                 for i, item in enumerate(shopping_list, start=1):
                     print(f"{i}. {item}")
             else:
                 print("Your shopping list is empty.")
-        
+
         elif choice == '4':
             print("Goodbye!")
             break
-        
+
         else:
             print("Invalid choice. Please try again.")
 
