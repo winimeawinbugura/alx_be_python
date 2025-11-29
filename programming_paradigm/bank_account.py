@@ -29,6 +29,6 @@ class BankAccount:
 
     def display_balance(self) -> None:
         """
-        Print the current account balance.
+        Print the current account balance in 2 decimal places.
         """
-        print(f"Current Balance: ${self.__account_balance}")
+        print(f"Current Balance: ${self.__account_balance:.2f}")
